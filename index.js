@@ -1,6 +1,6 @@
 const config = require('./config.json');
 const Discord = require('discord.js');
-const unicode = new RegExp("[^\x00-\x7F]+\ *(?:[^\x00-\x7F]| )*","g");
+const util = require('util');
 const bot = new Discord.Client({
     disableEveryone: true,
     disabledEvents: ['TYPING_START']
@@ -29,14 +29,14 @@ bot.on("message", async message => {
         
         let msg = message.content.slice(config.prefix.length); // slice of the prefix on the message
 
-        let args = message.content.split(" "); // break the message into part by spaces
+        let args = msg.split(" "); // break the message into part by spaces
 
         let cmd = args[0].toLowerCase(); // set the first word as the command in lowercase just in case
 
         args.shift(); // delete the first word from the args
 
         
-        if (cmd === 'hi' || cmd === "hello") { // the first command [I don't like ping > pong]
+        if (cmd === 'hi' || cmd === 'hello') { // the first command [I don't like ping > pong]
             message.channel.send(`Hi there ${message.author.toString()}`);
             return; 
         }
@@ -52,7 +52,7 @@ bot.on("message", async message => {
         }
 
         else { // if the command doesn't match anything you can say something or just ignore it
-            message.channel.send();
+            message.channel.send(`I don't know what command that is.`);
             return;
         }
         

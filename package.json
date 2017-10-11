@@ -1,29 +1,26 @@
 {
-  "name": "kuroyukihime",
-  "version": "2.4.0",
-  "description": "A Discord bot themed around Accel World and more specifically Kuroyukihime",
+  "name": "discord-bot-template",
+  "version": "1.0.0",
+  "description": "A Discord bot template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Kuroyukihime",
     "discord",
-    "bot",
-    "accel",
-    "world"
+    "bot"
   ],
-  "author": "Tony (zfb)",
-  "license": "ISC",
+  "author": "Tony (zfbTony)",
+  "license": "MIT",
   "dependencies": {
-    "discord.js": "github:hydrabolt/discord.js#master",
-    "djs-collection-persistent": "^0.1.4",
-    "erlpack": "github:discordapp/erlpack",
-    "got": "^7.1.0",
-    "opusscript": "0.0.4",
-    "sodium": "^2.0.1",
-    "uws": "^8.14.1",
-    "xml2js": "^0.4.19",
-    "ytdl-core": "github:fent/node-ytdl-core#master"
-  }
+    "discord.js": "^11.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zfbTony/Discord-Bot-Template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zfbTony/Discord-Bot-Template/issues"
+  },
+  "homepage": "https://github.com/zfbTony/Discord-Bot-Template#readme"
 }
