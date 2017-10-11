@@ -1,0 +1,29 @@
+{
+  "name": "kuroyukihime",
+  "version": "2.4.0",
+  "description": "A Discord bot themed around Accel World and more specifically Kuroyukihime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Kuroyukihime",
+    "discord",
+    "bot",
+    "accel",
+    "world"
+  ],
+  "author": "Tony (zfb)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "github:hydrabolt/discord.js#master",
+    "djs-collection-persistent": "^0.1.4",
+    "erlpack": "github:discordapp/erlpack",
+    "got": "^7.1.0",
+    "opusscript": "0.0.4",
+    "sodium": "^2.0.1",
+    "uws": "^8.14.1",
+    "xml2js": "^0.4.19",
+    "ytdl-core": "github:fent/node-ytdl-core#master"
+  }
+}
