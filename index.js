@@ -56,7 +56,7 @@ bot.on("message", async message => {
             return;
         }
         
-    } else if (messagestr.indexOf("<@"+bot.user.id) === 0 || messagestr.indexOf("<@!"+bot.user.id) === 0) { // Catch @Mentions
+    } else if (message.content.indexOf("<@"+bot.user.id) === 0 || message.content.indexOf("<@!"+bot.user.id) === 0) { // Catch @Mentions
 
         return message.channel.send(`Use \`${config.prefix}\` to interact with me.`); //help people learn your prefix
     }
