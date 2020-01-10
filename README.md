@@ -1,5 +1,7 @@
 # Simple Discord Bot Template
 
+##This project is being archived and replaced with this [Discord Bot Template 2](https://github.com/zfbx/Discord-Bot-Template-2) for better stability, performance and wider feature set. 
+
 ## About
 This is a rather simple Discord bot built on [node.js](https://nodejs.org) using the [Discord.js](https://github.com/hydrabolt/discord.js) api.
 
